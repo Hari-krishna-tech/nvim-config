@@ -98,6 +98,69 @@ Step 1: Download a Nerd Font
 
 - currently disabled , becuase i don't need it now 
 
+## Tmux 
+
+- Terminalogy 
+    - session - when you start tmux in your terminal it creates a new session
+    - window - inside a session u can create a window with <leader>c, move between them with <leader>n, or <leader>n (n is the number of the window
+    - pane - inside a window you can create multiple pane with <leader>% (horizontal) <leader>" for vertical split
+    - <leader>arrowKey to move around the pane
+    - rebind made so u can also use <leader>h to move left pane
+    - <leader>j to move down
+    - <leader>k to move up
+    - <leader>l to move right
+    - just like vim
+
+- Commands
+    - Leader is by deafult C-b, but is not ergonomical so it is changed to C-s with .tmux.conf file in the root director 
+    unbind r
+    bind r source-file ~/.tmux.conf
+    - source the config after entering terminal with tmux source ~/.tmux.conf
+    - reload config with <leader>r
+    -  
+    
+## Tmux (Terminal multiplexer)
+
+- Allows you to have multiple sudo terminal login tied to 1 terminal sessions
+- super power comes in when you can detach from 1 terminal session and create a other session (even then you can restore the previous session)
+- install tmux with brew install tmux 
+- to enter tmux session just type tmux 
+- Leader Ctrl + b (default)
+- you will be by default in window 0
+- to create a new window <leader>c 
+- we can see how many windows there are in with the entry in the bottom
+- to go next window <leader>
+- go to windows by number <leader>n -n -> is the nubmer you want to go
+- to split the current window in horizontal : <leader>%
+- to split the current window in the vertical : <leader>"
+- to split jump through the panes in the window: <leader>arrow keys 
+- rename a window
+    - <leader>: -> takes you to command mode 
+    - type rename-window new_name 
+
+## session management 
+
+- if you want to detach from the current session <leader>d -> put you can in the normal terminal 
+- tmux ls -> to see all the sessions
+- reattach to the previous session 
+- tmux attach
+
+- Other session 
+    - detach from current session 
+    - type tmux to create a new one 
+
+    - if you want to go to other session, type <leader>s 
+    - to list the sessions 
+    - and you can go between them 
+    - inorder to rename the session just go to command mode <leader>:
+    - rename-session new-name
+    - now <leader>b will show list of sessions 
+
+
+
+
+
+
 
 
 
