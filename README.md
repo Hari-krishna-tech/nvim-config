@@ -5,7 +5,7 @@
 # Config 
 
 - '~/.configs/nvim' 
-- store all the config files in the above directory (nvim on load will look for config from her)
+- store all the config files in the above directory (nvim on load will look for config from here)
 - After loading it will search for init.lua file 
 - You can add your custom plugin specs under lua/plugins/. All files there will be automatically loaded by lazy.nvim
 - in init.lua we just configure the lazyvim, then we create a folder called lua there we add plugins folder to load all our plugins 
